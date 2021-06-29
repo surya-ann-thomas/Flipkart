@@ -4,15 +4,14 @@ import java.io.IOException;
 import java.util.Map;
 
 import org.testng.Assert;
-import org.testng.annotations.AfterTest;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import com.util.ExcelUtility;
 
 import pages.Login;
-import pages.OrderPlace;
+
 import pages.homePage;
 import pages.productPage;
 import testBase.Base;
@@ -28,7 +27,7 @@ public class homePageTest extends Base{
 	Login login_;
 	homePage home;
 	productPage product;
-	OrderPlace order;
+	
 	@BeforeMethod
 	public void before() throws IOException, InterruptedException {
 		start();
@@ -36,7 +35,6 @@ public class homePageTest extends Base{
 		
 		Thread.sleep(4000);
 		Map<String,String> data=ExcelUtility.getMap();
-
 	     home=login_.login(data.get("username"), data.get("password"));
 		//home=login_.login(prop.getProperty("username"), prop.getProperty("password"));
 	}
@@ -48,7 +46,7 @@ public class homePageTest extends Base{
 public void enterProductName() throws InterruptedException, IOException {
 	product=home.productSearchAndClick("samsung mobile");
 }
-@AfterTest
+@AfterMethod
 public void end() {
 	driver.quit();
 }

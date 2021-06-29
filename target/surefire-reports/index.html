@@ -2,12 +2,10 @@
 
 <html>
   <head>
-  <meta charset='utf-8'>
   <title>TestNG reports</title>
 
-    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
-    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
-    <script type="text/javascript" src="jquery.min.js"></script>
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
     <script type="text/javascript" src="testng-reports.js"></script>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <script type='text/javascript'>
@@ -24,9 +22,8 @@
   <body>
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
-      <button class="button" id="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 6 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +37,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Command_line_suite">
-              <span class="suite-name border-skipped">Command line suite</span>
+              <span class="suite-name border-failed">Command line suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -93,71 +90,80 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">11 methods,  11 skipped,  </span>
+                    <span class="method-stats">11 methods, 6 failed,   5 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title skipped">Skipped methods</span>
-                    <span class="show-or-hide-methods skipped">
-                      <a href="#" panel-name="suite-Command_line_suite" class="hide-methods skipped suite-Command_line_suite"> (hide)</a> <!-- hide-methods skipped suite-Command_line_suite -->
-                      <a href="#" panel-name="suite-Command_line_suite" class="show-methods skipped suite-Command_line_suite"> (show)</a> <!-- show-methods skipped suite-Command_line_suite -->
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Command_line_suite" class="hide-methods failed suite-Command_line_suite"> (hide)</a> <!-- hide-methods failed suite-Command_line_suite -->
+                      <a href="#" panel-name="suite-Command_line_suite" class="show-methods failed suite-Command_line_suite"> (show)</a> <!-- show-methods failed suite-Command_line_suite -->
                     </span>
-                    <div class="method-list-content skipped suite-Command_line_suite">
+                    <div class="method-list-content failed suite-Command_line_suite">
                       <span>
-                        <img width="3%" src="skipped.png"/>
+                        <img width="3%" src="failed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="test.productTest" hash-for-method="addToCartTest">addToCartTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="skipped.png"/>
+                        <img width="3%" src="failed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="test.PaymentPageTest" hash-for-method="cardNumberValidation">cardNumberValidation</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="skipped.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="test.homePageTest" hash-for-method="enterProductName">enterProductName</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="skipped.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="test.LoginTest" hash-for-method="loginTest">loginTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="skipped.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="test.homePageTest" hash-for-method="loginVerifyTest">loginVerifyTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="skipped.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="test.PlaceOrderTest" hash-for-method="orderTest">orderTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="skipped.png"/>
+                        <img width="3%" src="failed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="test.PaymentPageTest" hash-for-method="selectCreditCardAndEnter">selectCreditCardAndEnter</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="skipped.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="test.LoginTest" hash-for-method="titleTest">titleTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="skipped.png"/>
+                        <img width="3%" src="failed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="test.PaymentPageTest" hash-for-method="verifyPaymentPageTitle">verifyPaymentPageTitle</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="skipped.png"/>
+                        <img width="3%" src="failed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="test.productTest" hash-for-method="verifyPrdoduct">verifyPrdoduct</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="skipped.png"/>
+                        <img width="3%" src="failed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="test.PlaceOrderTest" hash-for-method="verifyProductInCart">verifyProductInCart</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content skipped suite-Command_line_suite -->
+                    </div> <!-- method-list-content failed suite-Command_line_suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Command_line_suite" class="hide-methods passed suite-Command_line_suite"> (hide)</a> <!-- hide-methods passed suite-Command_line_suite -->
+                      <a href="#" panel-name="suite-Command_line_suite" class="show-methods passed suite-Command_line_suite"> (show)</a> <!-- show-methods passed suite-Command_line_suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Command_line_suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="test.homePageTest" hash-for-method="enterProductName">enterProductName</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="test.LoginTest" hash-for-method="loginTest">loginTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="test.homePageTest" hash-for-method="loginVerifyTest">loginVerifyTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="test.PlaceOrderTest" hash-for-method="orderTest">orderTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="test.LoginTest" hash-for-method="titleTest">titleTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Command_line_suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -169,301 +175,91 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Command_line_suite" class="panel Command_line_suite">
-          <div class="suite-Command_line_suite-class-skipped">
+          <div class="suite-Command_line_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
-              <span class="class-name">test.LoginTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="loginTest">
-                  </a> <!-- loginTest -->
-                  <span class="method-name">loginTest</span>
-                  <div class="stack-trace">org.openqa.selenium.SessionNotCreatedException: session not created
-from timeout: Timed out receiving message from renderer: 600.000
-  (Session info: chrome=91.0.4472.124)
-Build info: version: &apos;3.8.1&apos;, revision: &apos;6e95a6684b&apos;, time: &apos;2017-12-01T18:33:54.468Z&apos;
-System info: host: &apos;ADMIN-PC&apos;, ip: &apos;192.168.42.87&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_201&apos;
-Driver info: driver.version: ChromeDriver
-remote stacktrace: Backtrace:
-	Ordinal0 [0x00A72DB3+2502067]
-	Ordinal0 [0x00A0C5B1+2082225]
-	Ordinal0 [0x00912498+1057944]
-	Ordinal0 [0x00904D2F+1002799]
-	Ordinal0 [0x00903D69+998761]
-	Ordinal0 [0x00904026+999462]
-	Ordinal0 [0x00903915+997653]
-	Ordinal0 [0x008FF4F4+980212]
-	Ordinal0 [0x009038D1+997585]
-	Ordinal0 [0x00903670+996976]
-	Ordinal0 [0x00903409+996361]
-	Ordinal0 [0x009136A0+1062560]
-	Ordinal0 [0x0095AA59+1354329]
-	Ordinal0 [0x0095967A+1349242]
-	Ordinal0 [0x00955BEB+1334251]
-	Ordinal0 [0x00932174+1188212]
-	Ordinal0 [0x00933009+1191945]
-	GetHandleVerifier [0x00BEEC5C+1511084]
-	GetHandleVerifier [0x00C98522+2205554]
-	GetHandleVerifier [0x00AF3393+480739]
-	GetHandleVerifier [0x00AF2579+477129]
-	Ordinal0 [0x00A11E5D+2104925]
-	Ordinal0 [0x00A163F8+2122744]
-	Ordinal0 [0x00A16537+2123063]
-	Ordinal0 [0x00A1EE53+2158163]
-	BaseThreadInitThunk [0x7554337A+18]
-	RtlInitializeExceptionChain [0x77809882+99]
-	RtlInitializeExceptionChain [0x77809855+54]
-
-	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$new$0(W3CHandshakeResponse.java:57)
-	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$getResponseFunction$2(W3CHandshakeResponse.java:104)
-	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:123)
-	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
-	at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
-	at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)
-	at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:498)
-	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485)
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
-	at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)
-	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:219)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:142)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
-	at testBase.Base.start(Base.java:29)
-	at test.PlaceOrderTest.before(PlaceOrderTest.java:30)
-... Removed 38 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="titleTest">
-                  </a> <!-- titleTest -->
-                  <span class="method-name">titleTest</span>
-                  <div class="stack-trace">org.openqa.selenium.SessionNotCreatedException: session not created
-from timeout: Timed out receiving message from renderer: 600.000
-  (Session info: chrome=91.0.4472.124)
-Build info: version: &apos;3.8.1&apos;, revision: &apos;6e95a6684b&apos;, time: &apos;2017-12-01T18:33:54.468Z&apos;
-System info: host: &apos;ADMIN-PC&apos;, ip: &apos;192.168.42.87&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_201&apos;
-Driver info: driver.version: ChromeDriver
-remote stacktrace: Backtrace:
-	Ordinal0 [0x00A72DB3+2502067]
-	Ordinal0 [0x00A0C5B1+2082225]
-	Ordinal0 [0x00912498+1057944]
-	Ordinal0 [0x00904D2F+1002799]
-	Ordinal0 [0x00903D69+998761]
-	Ordinal0 [0x00904026+999462]
-	Ordinal0 [0x00903915+997653]
-	Ordinal0 [0x008FF4F4+980212]
-	Ordinal0 [0x009038D1+997585]
-	Ordinal0 [0x00903670+996976]
-	Ordinal0 [0x00903409+996361]
-	Ordinal0 [0x009136A0+1062560]
-	Ordinal0 [0x0095AA59+1354329]
-	Ordinal0 [0x0095967A+1349242]
-	Ordinal0 [0x00955BEB+1334251]
-	Ordinal0 [0x00932174+1188212]
-	Ordinal0 [0x00933009+1191945]
-	GetHandleVerifier [0x00BEEC5C+1511084]
-	GetHandleVerifier [0x00C98522+2205554]
-	GetHandleVerifier [0x00AF3393+480739]
-	GetHandleVerifier [0x00AF2579+477129]
-	Ordinal0 [0x00A11E5D+2104925]
-	Ordinal0 [0x00A163F8+2122744]
-	Ordinal0 [0x00A16537+2123063]
-	Ordinal0 [0x00A1EE53+2158163]
-	BaseThreadInitThunk [0x7554337A+18]
-	RtlInitializeExceptionChain [0x77809882+99]
-	RtlInitializeExceptionChain [0x77809855+54]
-
-	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$new$0(W3CHandshakeResponse.java:57)
-	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$getResponseFunction$2(W3CHandshakeResponse.java:104)
-	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:123)
-	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
-	at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
-	at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)
-	at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:498)
-	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485)
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
-	at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)
-	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:219)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:142)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
-	at testBase.Base.start(Base.java:29)
-	at test.PlaceOrderTest.before(PlaceOrderTest.java:30)
-... Removed 38 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Command_line_suite-class-skipped -->
-          <div class="suite-Command_line_suite-class-skipped">
-            <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
+              <img src="failed.png"/>
               <span class="class-name">test.PlaceOrderTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="orderTest">
-                  </a> <!-- orderTest -->
-                  <span class="method-name">orderTest</span>
-                  <div class="stack-trace">org.openqa.selenium.SessionNotCreatedException: session not created
-from timeout: Timed out receiving message from renderer: 600.000
-  (Session info: chrome=91.0.4472.124)
-Build info: version: &apos;3.8.1&apos;, revision: &apos;6e95a6684b&apos;, time: &apos;2017-12-01T18:33:54.468Z&apos;
-System info: host: &apos;ADMIN-PC&apos;, ip: &apos;192.168.42.87&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_201&apos;
-Driver info: driver.version: ChromeDriver
-remote stacktrace: Backtrace:
-	Ordinal0 [0x00A72DB3+2502067]
-	Ordinal0 [0x00A0C5B1+2082225]
-	Ordinal0 [0x00912498+1057944]
-	Ordinal0 [0x00904D2F+1002799]
-	Ordinal0 [0x00903D69+998761]
-	Ordinal0 [0x00904026+999462]
-	Ordinal0 [0x00903915+997653]
-	Ordinal0 [0x008FF4F4+980212]
-	Ordinal0 [0x009038D1+997585]
-	Ordinal0 [0x00903670+996976]
-	Ordinal0 [0x00903409+996361]
-	Ordinal0 [0x009136A0+1062560]
-	Ordinal0 [0x0095AA59+1354329]
-	Ordinal0 [0x0095967A+1349242]
-	Ordinal0 [0x00955BEB+1334251]
-	Ordinal0 [0x00932174+1188212]
-	Ordinal0 [0x00933009+1191945]
-	GetHandleVerifier [0x00BEEC5C+1511084]
-	GetHandleVerifier [0x00C98522+2205554]
-	GetHandleVerifier [0x00AF3393+480739]
-	GetHandleVerifier [0x00AF2579+477129]
-	Ordinal0 [0x00A11E5D+2104925]
-	Ordinal0 [0x00A163F8+2122744]
-	Ordinal0 [0x00A16537+2123063]
-	Ordinal0 [0x00A1EE53+2158163]
-	BaseThreadInitThunk [0x7554337A+18]
-	RtlInitializeExceptionChain [0x77809882+99]
-	RtlInitializeExceptionChain [0x77809855+54]
-
-	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$new$0(W3CHandshakeResponse.java:57)
-	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$getResponseFunction$2(W3CHandshakeResponse.java:104)
-	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:123)
-	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
-	at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
-	at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)
-	at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:498)
-	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485)
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
-	at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)
-	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:219)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:142)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
-	at testBase.Base.start(Base.java:29)
-	at test.PlaceOrderTest.before(PlaceOrderTest.java:30)
-... Removed 38 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="verifyProductInCart">
                   </a> <!-- verifyProductInCart -->
                   <span class="method-name">verifyProductInCart</span>
-                  <div class="stack-trace">org.openqa.selenium.SessionNotCreatedException: session not created
-from timeout: Timed out receiving message from renderer: 600.000
-  (Session info: chrome=91.0.4472.124)
-Build info: version: &apos;3.8.1&apos;, revision: &apos;6e95a6684b&apos;, time: &apos;2017-12-01T18:33:54.468Z&apos;
+                  <div class="stack-trace"><b>"org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;ADMIN-PC&apos;, ip: &apos;192.168.42.87&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_201&apos;
-Driver info: driver.version: ChromeDriver
-remote stacktrace: Backtrace:
-	Ordinal0 [0x00A72DB3+2502067]
-	Ordinal0 [0x00A0C5B1+2082225]
-	Ordinal0 [0x00912498+1057944]
-	Ordinal0 [0x00904D2F+1002799]
-	Ordinal0 [0x00903D69+998761]
-	Ordinal0 [0x00904026+999462]
-	Ordinal0 [0x00903915+997653]
-	Ordinal0 [0x008FF4F4+980212]
-	Ordinal0 [0x009038D1+997585]
-	Ordinal0 [0x00903670+996976]
-	Ordinal0 [0x00903409+996361]
-	Ordinal0 [0x009136A0+1062560]
-	Ordinal0 [0x0095AA59+1354329]
-	Ordinal0 [0x0095967A+1349242]
-	Ordinal0 [0x00955BEB+1334251]
-	Ordinal0 [0x00932174+1188212]
-	Ordinal0 [0x00933009+1191945]
-	GetHandleVerifier [0x00BEEC5C+1511084]
-	GetHandleVerifier [0x00C98522+2205554]
-	GetHandleVerifier [0x00AF3393+480739]
-	GetHandleVerifier [0x00AF2579+477129]
-	Ordinal0 [0x00A11E5D+2104925]
-	Ordinal0 [0x00A163F8+2122744]
-	Ordinal0 [0x00A16537+2123063]
-	Ordinal0 [0x00A1EE53+2158163]
-	BaseThreadInitThunk [0x7554337A+18]
-	RtlInitializeExceptionChain [0x77809882+99]
-	RtlInitializeExceptionChain [0x77809855+54]
-
-	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$new$0(W3CHandshakeResponse.java:57)
-	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$getResponseFunction$2(W3CHandshakeResponse.java:104)
-	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:123)
-	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
-	at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
-	at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)
-	at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:498)
-	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485)
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
-	at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)
-	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:219)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:142)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
-	at testBase.Base.start(Base.java:29)
-	at test.PlaceOrderTest.before(PlaceOrderTest.java:30)
-... Removed 38 stack frames
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver.getTitle(RemoteWebDriver.java:281)
+	at pages.OrderPlace.verifyCart(OrderPlace.java:27)
+	at test.PlaceOrderTest.verifyProductInCart(PlaceOrderTest.java:42)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+... Removed 25 stack frames<br/> org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;ADMIN-PC&apos;, ip: &apos;192.168.42.87&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_201&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver.getTitle(RemoteWebDriver.java:281)
+	at pages.OrderPlace.verifyCart(OrderPlace.java:27)
+	at test.PlaceOrderTest.verifyProductInCart(PlaceOrderTest.java:42)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+"</b><br>org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)<br>org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)<br>org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)<br>org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)<br>org.openqa.selenium.remote.RemoteWebDriver.getTitle(RemoteWebDriver.java:281)<br>pages.OrderPlace.verifyCart(OrderPlace.java:27)<br>test.PlaceOrderTest.verifyProductInCart(PlaceOrderTest.java:42)<br>sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br>sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br>java.lang.reflect.Method.invoke(Method.java:498)<br>org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br>org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br>org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br>org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br>org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br>org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br>org.testng.TestRunner.privateRun(TestRunner.java:767)<br>org.testng.TestRunner.run(TestRunner.java:617)<br>org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br>org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br>org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br>org.testng.SuiteRunner.run(SuiteRunner.java:240)<br>org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br>org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br>org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)<br>org.testng.TestNG.runSuitesLocally(TestNG.java:1123)<br>org.testng.TestNG.run(TestNG.java:1031)<br>org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)<br>org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)<br>org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)<br>org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)<br>sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br>sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br>java.lang.reflect.Method.invoke(Method.java:498)<br>org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)<br>org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)<br>org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)<br>org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)<br>org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)<br>
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Command_line_suite-class-skipped -->
-          <div class="suite-Command_line_suite-class-skipped">
+          </div> <!-- suite-Command_line_suite-class-failed -->
+          <div class="suite-Command_line_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
+              <img src="failed.png"/>
               <span class="class-name">test.productTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -472,67 +268,102 @@ remote stacktrace: Backtrace:
                   <a name="addToCartTest">
                   </a> <!-- addToCartTest -->
                   <span class="method-name">addToCartTest</span>
-                  <div class="stack-trace">org.openqa.selenium.SessionNotCreatedException: session not created
-from timeout: Timed out receiving message from renderer: 600.000
+                  <div class="stack-trace"><b>"org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[@class=&apos;_2KpZ6l _2U9uOA _3v1-ww&apos;]&quot;}
   (Session info: chrome=91.0.4472.124)
-Build info: version: &apos;3.8.1&apos;, revision: &apos;6e95a6684b&apos;, time: &apos;2017-12-01T18:33:54.468Z&apos;
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;ADMIN-PC&apos;, ip: &apos;192.168.42.87&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_201&apos;
-Driver info: driver.version: ChromeDriver
-remote stacktrace: Backtrace:
-	Ordinal0 [0x00A72DB3+2502067]
-	Ordinal0 [0x00A0C5B1+2082225]
-	Ordinal0 [0x00912498+1057944]
-	Ordinal0 [0x00904D2F+1002799]
-	Ordinal0 [0x00903D69+998761]
-	Ordinal0 [0x00904026+999462]
-	Ordinal0 [0x00903915+997653]
-	Ordinal0 [0x008FF4F4+980212]
-	Ordinal0 [0x009038D1+997585]
-	Ordinal0 [0x00903670+996976]
-	Ordinal0 [0x00903409+996361]
-	Ordinal0 [0x009136A0+1062560]
-	Ordinal0 [0x0095AA59+1354329]
-	Ordinal0 [0x0095967A+1349242]
-	Ordinal0 [0x00955BEB+1334251]
-	Ordinal0 [0x00932174+1188212]
-	Ordinal0 [0x00933009+1191945]
-	GetHandleVerifier [0x00BEEC5C+1511084]
-	GetHandleVerifier [0x00C98522+2205554]
-	GetHandleVerifier [0x00AF3393+480739]
-	GetHandleVerifier [0x00AF2579+477129]
-	Ordinal0 [0x00A11E5D+2104925]
-	Ordinal0 [0x00A163F8+2122744]
-	Ordinal0 [0x00A16537+2123063]
-	Ordinal0 [0x00A1EE53+2158163]
-	BaseThreadInitThunk [0x7554337A+18]
-	RtlInitializeExceptionChain [0x77809882+99]
-	RtlInitializeExceptionChain [0x77809855+54]
-
-	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$new$0(W3CHandshakeResponse.java:57)
-	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$getResponseFunction$2(W3CHandshakeResponse.java:104)
-	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:123)
-	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
-	at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
-	at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)
-	at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:498)
-	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485)
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
-	at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)
-	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.124, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Windows\TEMP\scoped_dir8...}, goog:chromeOptions: {debuggerAddress: localhost:53574}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 4cff83d8099dadf653dbe27bb226a8bf
+*** Element info: {Using=xpath, value=//button[@class=&apos;_2KpZ6l _2U9uOA _3v1-ww&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:219)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:142)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
-	at testBase.Base.start(Base.java:29)
-	at test.PlaceOrderTest.before(PlaceOrderTest.java:30)
-... Removed 38 stack frames
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy9.click(Unknown Source)
+	at pages.productPage.addToCart(productPage.java:52)
+	at test.productTest.addToCartTest(productTest.java:50)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+... Removed 29 stack frames<br/> org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[@class=&apos;_2KpZ6l _2U9uOA _3v1-ww&apos;]&quot;}
+  (Session info: chrome=91.0.4472.124)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;ADMIN-PC&apos;, ip: &apos;192.168.42.87&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_201&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.124, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Windows\TEMP\scoped_dir8...}, goog:chromeOptions: {debuggerAddress: localhost:53574}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 4cff83d8099dadf653dbe27bb226a8bf
+*** Element info: {Using=xpath, value=//button[@class=&apos;_2KpZ6l _2U9uOA _3v1-ww&apos;]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy9.click(Unknown Source)
+	at pages.productPage.addToCart(productPage.java:52)
+	at test.productTest.addToCartTest(productTest.java:50)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+"</b><br>sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br>sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)<br>sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)<br>java.lang.reflect.Constructor.newInstance(Constructor.java:423)<br>org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)<br>org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)<br>org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)<br>org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)<br>org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)<br>org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)<br>org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)<br>org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)<br>org.openqa.selenium.By$ByXPath.findElement(By.java:353)<br>org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)<br>org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)<br>org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)<br>com.sun.proxy.$Proxy9.click(Unknown Source)<br>pages.productPage.addToCart(productPage.java:52)<br>test.productTest.addToCartTest(productTest.java:50)<br>sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br>sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br>java.lang.reflect.Method.invoke(Method.java:498)<br>org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br>org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br>org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br>org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br>org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br>org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br>org.testng.TestRunner.privateRun(TestRunner.java:767)<br>org.testng.TestRunner.run(TestRunner.java:617)<br>org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br>org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br>org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br>org.testng.SuiteRunner.run(SuiteRunner.java:240)<br>org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br>org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br>org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)<br>org.testng.TestNG.runSuitesLocally(TestNG.java:1123)<br>org.testng.TestNG.run(TestNG.java:1031)<br>org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)<br>org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)<br>org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)<br>org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)<br>sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br>sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br>java.lang.reflect.Method.invoke(Method.java:498)<br>org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)<br>org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)<br>org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)<br>org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)<br>org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)<br>
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -541,75 +372,66 @@ remote stacktrace: Backtrace:
                   <a name="verifyPrdoduct">
                   </a> <!-- verifyPrdoduct -->
                   <span class="method-name">verifyPrdoduct</span>
-                  <div class="stack-trace">org.openqa.selenium.SessionNotCreatedException: session not created
-from timeout: Timed out receiving message from renderer: 600.000
-  (Session info: chrome=91.0.4472.124)
-Build info: version: &apos;3.8.1&apos;, revision: &apos;6e95a6684b&apos;, time: &apos;2017-12-01T18:33:54.468Z&apos;
-System info: host: &apos;ADMIN-PC&apos;, ip: &apos;192.168.42.87&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_201&apos;
-Driver info: driver.version: ChromeDriver
-remote stacktrace: Backtrace:
-	Ordinal0 [0x00A72DB3+2502067]
-	Ordinal0 [0x00A0C5B1+2082225]
-	Ordinal0 [0x00912498+1057944]
-	Ordinal0 [0x00904D2F+1002799]
-	Ordinal0 [0x00903D69+998761]
-	Ordinal0 [0x00904026+999462]
-	Ordinal0 [0x00903915+997653]
-	Ordinal0 [0x008FF4F4+980212]
-	Ordinal0 [0x009038D1+997585]
-	Ordinal0 [0x00903670+996976]
-	Ordinal0 [0x00903409+996361]
-	Ordinal0 [0x009136A0+1062560]
-	Ordinal0 [0x0095AA59+1354329]
-	Ordinal0 [0x0095967A+1349242]
-	Ordinal0 [0x00955BEB+1334251]
-	Ordinal0 [0x00932174+1188212]
-	Ordinal0 [0x00933009+1191945]
-	GetHandleVerifier [0x00BEEC5C+1511084]
-	GetHandleVerifier [0x00C98522+2205554]
-	GetHandleVerifier [0x00AF3393+480739]
-	GetHandleVerifier [0x00AF2579+477129]
-	Ordinal0 [0x00A11E5D+2104925]
-	Ordinal0 [0x00A163F8+2122744]
-	Ordinal0 [0x00A16537+2123063]
-	Ordinal0 [0x00A1EE53+2158163]
-	BaseThreadInitThunk [0x7554337A+18]
-	RtlInitializeExceptionChain [0x77809882+99]
-	RtlInitializeExceptionChain [0x77809855+54]
-
-	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$new$0(W3CHandshakeResponse.java:57)
-	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$getResponseFunction$2(W3CHandshakeResponse.java:104)
-	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:123)
-	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
-	at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
-	at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)
-	at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:498)
-	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485)
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
-	at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)
-	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:219)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:142)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
-	at testBase.Base.start(Base.java:29)
-	at test.PlaceOrderTest.before(PlaceOrderTest.java:30)
-... Removed 38 stack frames
+                  <div class="stack-trace"><b>"java.lang.AssertionError: titles do not match expected [SAMSUNG Galaxy F12 ( 64 GB Storage, 4 GB RAM ) Online at Best Price On Flipkart.com] but found [Online Shopping Site for Mobiles, Electronics, Furniture, Grocery, Lifestyle, Books &amp; More. Best Offers!]
+	at test.productTest.verifyPrdoduct(productTest.java:43)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+... Removed 29 stack frames<br/> java.lang.AssertionError: titles do not match expected [SAMSUNG Galaxy F12 ( 64 GB Storage, 4 GB RAM ) Online at Best Price On Flipkart.com] but found [Online Shopping Site for Mobiles, Electronics, Furniture, Grocery, Lifestyle, Books &amp; More. Best Offers!]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:176)
+	at test.productTest.verifyPrdoduct(productTest.java:43)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+"</b><br>org.testng.Assert.fail(Assert.java:94)<br>org.testng.Assert.failNotEquals(Assert.java:494)<br>org.testng.Assert.assertEquals(Assert.java:123)<br>org.testng.Assert.assertEquals(Assert.java:176)<br>test.productTest.verifyPrdoduct(productTest.java:43)<br>sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br>sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br>java.lang.reflect.Method.invoke(Method.java:498)<br>org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br>org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br>org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br>org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br>org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br>org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br>org.testng.TestRunner.privateRun(TestRunner.java:767)<br>org.testng.TestRunner.run(TestRunner.java:617)<br>org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br>org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br>org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br>org.testng.SuiteRunner.run(SuiteRunner.java:240)<br>org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br>org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br>org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)<br>org.testng.TestNG.runSuitesLocally(TestNG.java:1123)<br>org.testng.TestNG.run(TestNG.java:1031)<br>org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)<br>org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)<br>org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)<br>org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)<br>sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br>sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br>java.lang.reflect.Method.invoke(Method.java:498)<br>org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)<br>org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)<br>org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)<br>org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)<br>org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)<br>
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Command_line_suite-class-skipped -->
-          <div class="suite-Command_line_suite-class-skipped">
+          </div> <!-- suite-Command_line_suite-class-failed -->
+          <div class="suite-Command_line_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
+              <img src="failed.png"/>
               <span class="class-name">test.PaymentPageTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -618,67 +440,58 @@ remote stacktrace: Backtrace:
                   <a name="cardNumberValidation">
                   </a> <!-- cardNumberValidation -->
                   <span class="method-name">cardNumberValidation</span>
-                  <div class="stack-trace">org.openqa.selenium.SessionNotCreatedException: session not created
-from timeout: Timed out receiving message from renderer: 600.000
-  (Session info: chrome=91.0.4472.124)
-Build info: version: &apos;3.8.1&apos;, revision: &apos;6e95a6684b&apos;, time: &apos;2017-12-01T18:33:54.468Z&apos;
-System info: host: &apos;ADMIN-PC&apos;, ip: &apos;192.168.42.87&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_201&apos;
-Driver info: driver.version: ChromeDriver
-remote stacktrace: Backtrace:
-	Ordinal0 [0x00A72DB3+2502067]
-	Ordinal0 [0x00A0C5B1+2082225]
-	Ordinal0 [0x00912498+1057944]
-	Ordinal0 [0x00904D2F+1002799]
-	Ordinal0 [0x00903D69+998761]
-	Ordinal0 [0x00904026+999462]
-	Ordinal0 [0x00903915+997653]
-	Ordinal0 [0x008FF4F4+980212]
-	Ordinal0 [0x009038D1+997585]
-	Ordinal0 [0x00903670+996976]
-	Ordinal0 [0x00903409+996361]
-	Ordinal0 [0x009136A0+1062560]
-	Ordinal0 [0x0095AA59+1354329]
-	Ordinal0 [0x0095967A+1349242]
-	Ordinal0 [0x00955BEB+1334251]
-	Ordinal0 [0x00932174+1188212]
-	Ordinal0 [0x00933009+1191945]
-	GetHandleVerifier [0x00BEEC5C+1511084]
-	GetHandleVerifier [0x00C98522+2205554]
-	GetHandleVerifier [0x00AF3393+480739]
-	GetHandleVerifier [0x00AF2579+477129]
-	Ordinal0 [0x00A11E5D+2104925]
-	Ordinal0 [0x00A163F8+2122744]
-	Ordinal0 [0x00A16537+2123063]
-	Ordinal0 [0x00A1EE53+2158163]
-	BaseThreadInitThunk [0x7554337A+18]
-	RtlInitializeExceptionChain [0x77809882+99]
-	RtlInitializeExceptionChain [0x77809855+54]
-
-	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$new$0(W3CHandshakeResponse.java:57)
-	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$getResponseFunction$2(W3CHandshakeResponse.java:104)
-	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:123)
-	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
-	at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
-	at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)
-	at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:498)
-	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485)
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
-	at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)
-	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:219)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:142)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
-	at testBase.Base.start(Base.java:29)
-	at test.PlaceOrderTest.before(PlaceOrderTest.java:30)
-... Removed 38 stack frames
+                  <div class="stack-trace"><b>"java.lang.AssertionError: card number is valid expected [Not a valid card number] but found []
+	at test.PaymentPageTest.cardNumberValidation(PaymentPageTest.java:57)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+... Removed 29 stack frames<br/> java.lang.AssertionError: card number is valid expected [Not a valid card number] but found []
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:176)
+	at test.PaymentPageTest.cardNumberValidation(PaymentPageTest.java:57)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+"</b><br>org.testng.Assert.fail(Assert.java:94)<br>org.testng.Assert.failNotEquals(Assert.java:494)<br>org.testng.Assert.assertEquals(Assert.java:123)<br>org.testng.Assert.assertEquals(Assert.java:176)<br>test.PaymentPageTest.cardNumberValidation(PaymentPageTest.java:57)<br>sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br>sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br>java.lang.reflect.Method.invoke(Method.java:498)<br>org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br>org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br>org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br>org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br>org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br>org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br>org.testng.TestRunner.privateRun(TestRunner.java:767)<br>org.testng.TestRunner.run(TestRunner.java:617)<br>org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br>org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br>org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br>org.testng.SuiteRunner.run(SuiteRunner.java:240)<br>org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br>org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br>org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)<br>org.testng.TestNG.runSuitesLocally(TestNG.java:1123)<br>org.testng.TestNG.run(TestNG.java:1031)<br>org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)<br>org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)<br>org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)<br>org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)<br>sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br>sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br>java.lang.reflect.Method.invoke(Method.java:498)<br>org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)<br>org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)<br>org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)<br>org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)<br>org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)<br>
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -687,67 +500,102 @@ remote stacktrace: Backtrace:
                   <a name="selectCreditCardAndEnter">
                   </a> <!-- selectCreditCardAndEnter -->
                   <span class="method-name">selectCreditCardAndEnter</span>
-                  <div class="stack-trace">org.openqa.selenium.SessionNotCreatedException: session not created
-from timeout: Timed out receiving message from renderer: 600.000
+                  <div class="stack-trace"><b>"org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[text()=&apos;CONTINUE&apos;]&quot;}
   (Session info: chrome=91.0.4472.124)
-Build info: version: &apos;3.8.1&apos;, revision: &apos;6e95a6684b&apos;, time: &apos;2017-12-01T18:33:54.468Z&apos;
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;ADMIN-PC&apos;, ip: &apos;192.168.42.87&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_201&apos;
-Driver info: driver.version: ChromeDriver
-remote stacktrace: Backtrace:
-	Ordinal0 [0x00A72DB3+2502067]
-	Ordinal0 [0x00A0C5B1+2082225]
-	Ordinal0 [0x00912498+1057944]
-	Ordinal0 [0x00904D2F+1002799]
-	Ordinal0 [0x00903D69+998761]
-	Ordinal0 [0x00904026+999462]
-	Ordinal0 [0x00903915+997653]
-	Ordinal0 [0x008FF4F4+980212]
-	Ordinal0 [0x009038D1+997585]
-	Ordinal0 [0x00903670+996976]
-	Ordinal0 [0x00903409+996361]
-	Ordinal0 [0x009136A0+1062560]
-	Ordinal0 [0x0095AA59+1354329]
-	Ordinal0 [0x0095967A+1349242]
-	Ordinal0 [0x00955BEB+1334251]
-	Ordinal0 [0x00932174+1188212]
-	Ordinal0 [0x00933009+1191945]
-	GetHandleVerifier [0x00BEEC5C+1511084]
-	GetHandleVerifier [0x00C98522+2205554]
-	GetHandleVerifier [0x00AF3393+480739]
-	GetHandleVerifier [0x00AF2579+477129]
-	Ordinal0 [0x00A11E5D+2104925]
-	Ordinal0 [0x00A163F8+2122744]
-	Ordinal0 [0x00A16537+2123063]
-	Ordinal0 [0x00A1EE53+2158163]
-	BaseThreadInitThunk [0x7554337A+18]
-	RtlInitializeExceptionChain [0x77809882+99]
-	RtlInitializeExceptionChain [0x77809855+54]
-
-	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$new$0(W3CHandshakeResponse.java:57)
-	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$getResponseFunction$2(W3CHandshakeResponse.java:104)
-	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:123)
-	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
-	at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
-	at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)
-	at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:498)
-	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485)
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
-	at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)
-	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.124, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Windows\TEMP\scoped_dir6...}, goog:chromeOptions: {debuggerAddress: localhost:59366}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 6a1dc2adcef52a3a3614032b837eb489
+*** Element info: {Using=xpath, value=//button[text()=&apos;CONTINUE&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:219)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:142)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
-	at testBase.Base.start(Base.java:29)
-	at test.PlaceOrderTest.before(PlaceOrderTest.java:30)
-... Removed 38 stack frames
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy9.click(Unknown Source)
+	at pages.PaymentPage.creditCardPage(PaymentPage.java:36)
+	at test.PaymentPageTest.selectCreditCardAndEnter(PaymentPageTest.java:51)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+... Removed 29 stack frames<br/> org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[text()=&apos;CONTINUE&apos;]&quot;}
+  (Session info: chrome=91.0.4472.124)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;ADMIN-PC&apos;, ip: &apos;192.168.42.87&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_201&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.124, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Windows\TEMP\scoped_dir6...}, goog:chromeOptions: {debuggerAddress: localhost:59366}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 6a1dc2adcef52a3a3614032b837eb489
+*** Element info: {Using=xpath, value=//button[text()=&apos;CONTINUE&apos;]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy9.click(Unknown Source)
+	at pages.PaymentPage.creditCardPage(PaymentPage.java:36)
+	at test.PaymentPageTest.selectCreditCardAndEnter(PaymentPageTest.java:51)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+"</b><br>sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br>sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)<br>sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)<br>java.lang.reflect.Constructor.newInstance(Constructor.java:423)<br>org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)<br>org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)<br>org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)<br>org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)<br>org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)<br>org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)<br>org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)<br>org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)<br>org.openqa.selenium.By$ByXPath.findElement(By.java:353)<br>org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)<br>org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)<br>org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)<br>com.sun.proxy.$Proxy9.click(Unknown Source)<br>pages.PaymentPage.creditCardPage(PaymentPage.java:36)<br>test.PaymentPageTest.selectCreditCardAndEnter(PaymentPageTest.java:51)<br>sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br>sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br>java.lang.reflect.Method.invoke(Method.java:498)<br>org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br>org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br>org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br>org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br>org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br>org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br>org.testng.TestRunner.privateRun(TestRunner.java:767)<br>org.testng.TestRunner.run(TestRunner.java:617)<br>org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br>org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br>org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br>org.testng.SuiteRunner.run(SuiteRunner.java:240)<br>org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br>org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br>org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)<br>org.testng.TestNG.runSuitesLocally(TestNG.java:1123)<br>org.testng.TestNG.run(TestNG.java:1031)<br>org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)<br>org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)<br>org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)<br>org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)<br>sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br>sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br>java.lang.reflect.Method.invoke(Method.java:498)<br>org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)<br>org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)<br>org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)<br>org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)<br>org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)<br>
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -756,75 +604,117 @@ remote stacktrace: Backtrace:
                   <a name="verifyPaymentPageTitle">
                   </a> <!-- verifyPaymentPageTitle -->
                   <span class="method-name">verifyPaymentPageTitle</span>
-                  <div class="stack-trace">org.openqa.selenium.SessionNotCreatedException: session not created
-from timeout: Timed out receiving message from renderer: 600.000
-  (Session info: chrome=91.0.4472.124)
-Build info: version: &apos;3.8.1&apos;, revision: &apos;6e95a6684b&apos;, time: &apos;2017-12-01T18:33:54.468Z&apos;
+                  <div class="stack-trace"><b>"org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;ADMIN-PC&apos;, ip: &apos;192.168.42.87&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_201&apos;
-Driver info: driver.version: ChromeDriver
-remote stacktrace: Backtrace:
-	Ordinal0 [0x00A72DB3+2502067]
-	Ordinal0 [0x00A0C5B1+2082225]
-	Ordinal0 [0x00912498+1057944]
-	Ordinal0 [0x00904D2F+1002799]
-	Ordinal0 [0x00903D69+998761]
-	Ordinal0 [0x00904026+999462]
-	Ordinal0 [0x00903915+997653]
-	Ordinal0 [0x008FF4F4+980212]
-	Ordinal0 [0x009038D1+997585]
-	Ordinal0 [0x00903670+996976]
-	Ordinal0 [0x00903409+996361]
-	Ordinal0 [0x009136A0+1062560]
-	Ordinal0 [0x0095AA59+1354329]
-	Ordinal0 [0x0095967A+1349242]
-	Ordinal0 [0x00955BEB+1334251]
-	Ordinal0 [0x00932174+1188212]
-	Ordinal0 [0x00933009+1191945]
-	GetHandleVerifier [0x00BEEC5C+1511084]
-	GetHandleVerifier [0x00C98522+2205554]
-	GetHandleVerifier [0x00AF3393+480739]
-	GetHandleVerifier [0x00AF2579+477129]
-	Ordinal0 [0x00A11E5D+2104925]
-	Ordinal0 [0x00A163F8+2122744]
-	Ordinal0 [0x00A16537+2123063]
-	Ordinal0 [0x00A1EE53+2158163]
-	BaseThreadInitThunk [0x7554337A+18]
-	RtlInitializeExceptionChain [0x77809882+99]
-	RtlInitializeExceptionChain [0x77809855+54]
-
-	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$new$0(W3CHandshakeResponse.java:57)
-	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$getResponseFunction$2(W3CHandshakeResponse.java:104)
-	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:123)
-	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
-	at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
-	at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)
-	at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:498)
-	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485)
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
-	at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)
-	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:219)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:142)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
-	at testBase.Base.start(Base.java:29)
-	at test.PlaceOrderTest.before(PlaceOrderTest.java:30)
-... Removed 38 stack frames
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver.getTitle(RemoteWebDriver.java:281)
+	at pages.PaymentPage.paymentPageVerification(PaymentPage.java:32)
+	at test.PaymentPageTest.verifyPaymentPageTitle(PaymentPageTest.java:45)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+... Removed 25 stack frames<br/> org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;ADMIN-PC&apos;, ip: &apos;192.168.42.87&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_201&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver.getTitle(RemoteWebDriver.java:281)
+	at pages.PaymentPage.paymentPageVerification(PaymentPage.java:32)
+	at test.PaymentPageTest.verifyPaymentPageTitle(PaymentPageTest.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+"</b><br>org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)<br>org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)<br>org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)<br>org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)<br>org.openqa.selenium.remote.RemoteWebDriver.getTitle(RemoteWebDriver.java:281)<br>pages.PaymentPage.paymentPageVerification(PaymentPage.java:32)<br>test.PaymentPageTest.verifyPaymentPageTitle(PaymentPageTest.java:45)<br>sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br>sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br>java.lang.reflect.Method.invoke(Method.java:498)<br>org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br>org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br>org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br>org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br>org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br>org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br>org.testng.TestRunner.privateRun(TestRunner.java:767)<br>org.testng.TestRunner.run(TestRunner.java:617)<br>org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br>org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br>org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br>org.testng.SuiteRunner.run(SuiteRunner.java:240)<br>org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br>org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br>org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)<br>org.testng.TestNG.runSuitesLocally(TestNG.java:1123)<br>org.testng.TestNG.run(TestNG.java:1031)<br>org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)<br>org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)<br>org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)<br>org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)<br>sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br>sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br>java.lang.reflect.Method.invoke(Method.java:498)<br>org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)<br>org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)<br>org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)<br>org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)<br>org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)<br>
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Command_line_suite-class-skipped -->
-          <div class="suite-Command_line_suite-class-skipped">
+          </div> <!-- suite-Command_line_suite-class-failed -->
+          <div class="suite-Command_line_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
+              <img src="passed.png"/>
+              <span class="class-name">test.PlaceOrderTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="orderTest">
+                  </a> <!-- orderTest -->
+                  <span class="method-name">orderTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">test.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginTest">
+                  </a> <!-- loginTest -->
+                  <span class="method-name">loginTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="titleTest">
+                  </a> <!-- titleTest -->
+                  <span class="method-name">titleTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
               <span class="class-name">test.homePageTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -833,68 +723,6 @@ remote stacktrace: Backtrace:
                   <a name="enterProductName">
                   </a> <!-- enterProductName -->
                   <span class="method-name">enterProductName</span>
-                  <div class="stack-trace">org.openqa.selenium.SessionNotCreatedException: session not created
-from timeout: Timed out receiving message from renderer: 600.000
-  (Session info: chrome=91.0.4472.124)
-Build info: version: &apos;3.8.1&apos;, revision: &apos;6e95a6684b&apos;, time: &apos;2017-12-01T18:33:54.468Z&apos;
-System info: host: &apos;ADMIN-PC&apos;, ip: &apos;192.168.42.87&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_201&apos;
-Driver info: driver.version: ChromeDriver
-remote stacktrace: Backtrace:
-	Ordinal0 [0x00A72DB3+2502067]
-	Ordinal0 [0x00A0C5B1+2082225]
-	Ordinal0 [0x00912498+1057944]
-	Ordinal0 [0x00904D2F+1002799]
-	Ordinal0 [0x00903D69+998761]
-	Ordinal0 [0x00904026+999462]
-	Ordinal0 [0x00903915+997653]
-	Ordinal0 [0x008FF4F4+980212]
-	Ordinal0 [0x009038D1+997585]
-	Ordinal0 [0x00903670+996976]
-	Ordinal0 [0x00903409+996361]
-	Ordinal0 [0x009136A0+1062560]
-	Ordinal0 [0x0095AA59+1354329]
-	Ordinal0 [0x0095967A+1349242]
-	Ordinal0 [0x00955BEB+1334251]
-	Ordinal0 [0x00932174+1188212]
-	Ordinal0 [0x00933009+1191945]
-	GetHandleVerifier [0x00BEEC5C+1511084]
-	GetHandleVerifier [0x00C98522+2205554]
-	GetHandleVerifier [0x00AF3393+480739]
-	GetHandleVerifier [0x00AF2579+477129]
-	Ordinal0 [0x00A11E5D+2104925]
-	Ordinal0 [0x00A163F8+2122744]
-	Ordinal0 [0x00A16537+2123063]
-	Ordinal0 [0x00A1EE53+2158163]
-	BaseThreadInitThunk [0x7554337A+18]
-	RtlInitializeExceptionChain [0x77809882+99]
-	RtlInitializeExceptionChain [0x77809855+54]
-
-	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$new$0(W3CHandshakeResponse.java:57)
-	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$getResponseFunction$2(W3CHandshakeResponse.java:104)
-	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:123)
-	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
-	at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
-	at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)
-	at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:498)
-	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485)
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
-	at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)
-	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:219)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:142)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
-	at testBase.Base.start(Base.java:29)
-	at test.PlaceOrderTest.before(PlaceOrderTest.java:30)
-... Removed 38 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -902,72 +730,10 @@ remote stacktrace: Backtrace:
                   <a name="loginVerifyTest">
                   </a> <!-- loginVerifyTest -->
                   <span class="method-name">loginVerifyTest</span>
-                  <div class="stack-trace">org.openqa.selenium.SessionNotCreatedException: session not created
-from timeout: Timed out receiving message from renderer: 600.000
-  (Session info: chrome=91.0.4472.124)
-Build info: version: &apos;3.8.1&apos;, revision: &apos;6e95a6684b&apos;, time: &apos;2017-12-01T18:33:54.468Z&apos;
-System info: host: &apos;ADMIN-PC&apos;, ip: &apos;192.168.42.87&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_201&apos;
-Driver info: driver.version: ChromeDriver
-remote stacktrace: Backtrace:
-	Ordinal0 [0x00A72DB3+2502067]
-	Ordinal0 [0x00A0C5B1+2082225]
-	Ordinal0 [0x00912498+1057944]
-	Ordinal0 [0x00904D2F+1002799]
-	Ordinal0 [0x00903D69+998761]
-	Ordinal0 [0x00904026+999462]
-	Ordinal0 [0x00903915+997653]
-	Ordinal0 [0x008FF4F4+980212]
-	Ordinal0 [0x009038D1+997585]
-	Ordinal0 [0x00903670+996976]
-	Ordinal0 [0x00903409+996361]
-	Ordinal0 [0x009136A0+1062560]
-	Ordinal0 [0x0095AA59+1354329]
-	Ordinal0 [0x0095967A+1349242]
-	Ordinal0 [0x00955BEB+1334251]
-	Ordinal0 [0x00932174+1188212]
-	Ordinal0 [0x00933009+1191945]
-	GetHandleVerifier [0x00BEEC5C+1511084]
-	GetHandleVerifier [0x00C98522+2205554]
-	GetHandleVerifier [0x00AF3393+480739]
-	GetHandleVerifier [0x00AF2579+477129]
-	Ordinal0 [0x00A11E5D+2104925]
-	Ordinal0 [0x00A163F8+2122744]
-	Ordinal0 [0x00A16537+2123063]
-	Ordinal0 [0x00A1EE53+2158163]
-	BaseThreadInitThunk [0x7554337A+18]
-	RtlInitializeExceptionChain [0x77809882+99]
-	RtlInitializeExceptionChain [0x77809855+54]
-
-	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$new$0(W3CHandshakeResponse.java:57)
-	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$getResponseFunction$2(W3CHandshakeResponse.java:104)
-	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:123)
-	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
-	at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
-	at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)
-	at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:498)
-	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485)
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
-	at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)
-	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:219)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:142)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
-	at testBase.Base.start(Base.java:29)
-	at test.PlaceOrderTest.before(PlaceOrderTest.java:30)
-... Removed 38 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Command_line_suite-class-skipped -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
         </div> <!-- panel Command_line_suite -->
         <div panel-name="test-xml-Command_line_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -975,9 +741,9 @@ remote stacktrace: Backtrace:
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
-&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite verbose=&quot;0&quot; name=&quot;Command line suite&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;Command line test&quot;&gt;
+  &lt;test name=&quot;Command line test&quot; preserve-order=&quot;false&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;test.homePageTest&quot;/&gt;
       &lt;class name=&quot;test.LoginTest&quot;/&gt;
@@ -1025,54 +791,54 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(11);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'loginVerifyTest')
-data.setCell(0, 2, 'test.homePageTest')
-data.setCell(0, 3, 0);
+data.setCell(0, 1, 'cardNumberValidation')
+data.setCell(0, 2, 'test.PaymentPageTest')
+data.setCell(0, 3, 30160);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'orderTest')
-data.setCell(1, 2, 'test.PlaceOrderTest')
-data.setCell(1, 3, 0);
+data.setCell(1, 1, 'addToCartTest')
+data.setCell(1, 2, 'test.productTest')
+data.setCell(1, 3, 30148);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'titleTest')
-data.setCell(2, 2, 'test.LoginTest')
-data.setCell(2, 3, 0);
+data.setCell(2, 1, 'selectCreditCardAndEnter')
+data.setCell(2, 2, 'test.PaymentPageTest')
+data.setCell(2, 3, 30117);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'selectCreditCardAndEnter')
-data.setCell(3, 2, 'test.PaymentPageTest')
-data.setCell(3, 3, 0);
+data.setCell(3, 1, 'enterProductName')
+data.setCell(3, 2, 'test.homePageTest')
+data.setCell(3, 3, 10090);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'addToCartTest')
-data.setCell(4, 2, 'test.productTest')
-data.setCell(4, 3, 0);
+data.setCell(4, 1, 'orderTest')
+data.setCell(4, 2, 'test.PlaceOrderTest')
+data.setCell(4, 3, 5542);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'verifyProductInCart')
-data.setCell(5, 2, 'test.PlaceOrderTest')
-data.setCell(5, 3, 0);
+data.setCell(5, 1, 'loginVerifyTest')
+data.setCell(5, 2, 'test.homePageTest')
+data.setCell(5, 3, 4891);
 data.setCell(6, 0, 6)
 data.setCell(6, 1, 'verifyPrdoduct')
 data.setCell(6, 2, 'test.productTest')
-data.setCell(6, 3, 0);
+data.setCell(6, 3, 3018);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'enterProductName')
-data.setCell(7, 2, 'test.homePageTest')
-data.setCell(7, 3, 0);
+data.setCell(7, 1, 'verifyProductInCart')
+data.setCell(7, 2, 'test.PlaceOrderTest')
+data.setCell(7, 3, 3001);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'verifyPaymentPageTitle')
-data.setCell(8, 2, 'test.PaymentPageTest')
-data.setCell(8, 3, 0);
+data.setCell(8, 1, 'loginTest')
+data.setCell(8, 2, 'test.LoginTest')
+data.setCell(8, 3, 712);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'loginTest')
-data.setCell(9, 2, 'test.LoginTest')
-data.setCell(9, 3, 0);
+data.setCell(9, 1, 'verifyPaymentPageTitle')
+data.setCell(9, 2, 'test.PaymentPageTest')
+data.setCell(9, 3, 106);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'cardNumberValidation')
-data.setCell(10, 2, 'test.PaymentPageTest')
-data.setCell(10, 3, 0);
+data.setCell(10, 1, 'titleTest')
+data.setCell(10, 2, 'test.LoginTest')
+data.setCell(10, 3, 11);
 window.suiteTableData['Command_line_suite']= { tableData: data, tableDiv: 'times-div-Command_line_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 0 ms</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Command_line_suite">
               </div> <!-- times-div-Command_line_suite -->
             </div> <!-- times-div -->
@@ -1107,133 +873,157 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">test.PlaceOrderTest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">before</span>
-                <span class="method-start">26707 ms</span>
+                <span class="method-start">44702 ms</span>
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">test.productTest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">before</span>
-                <span class="method-start">633736 ms</span>
+                <span class="method-start">87296 ms</span>
               </div> <!-- configuration-test before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">test.homePageTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">before</span>
-                <span class="method-start">633807 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">loginVerifyTest</span>
-                <span class="method-start">633808 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">enterProductName</span>
-                <span class="method-start">633814 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method before">
-                <span class="method-name">before</span>
-                <span class="method-start">633814 ms</span>
-              </div> <!-- configuration-method before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">test.LoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">before</span>
-                <span class="method-start">633817 ms</span>
+                <span class="method-start">118869 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">titleTest</span>
-                <span class="method-start">633818 ms</span>
+                <span class="method-start">165940 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">end</span>
-                <span class="method-start">633818 ms</span>
+                <span class="method-start">165952 ms</span>
               </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">before</span>
-                <span class="method-start">633819 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method after">
-                <span class="method-name">end</span>
-                <span class="method-start">633820 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="test-method">
-                <span class="method-name">loginTest</span>
-                <span class="method-start">633820 ms</span>
-              </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">test.PaymentPageTest</div> <!-- chronological-class-name -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">verifyPaymentPageTitle</span>
-                <span class="method-start">633821 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">selectCreditCardAndEnter</span>
-                <span class="method-start">633822 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">cardNumberValidation</span>
-                <span class="method-start">633823 ms</span>
+                <span class="method-start">166581 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">test.PlaceOrderTest</div> <!-- chronological-class-name -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">verifyProductInCart</span>
-                <span class="method-start">633824 ms</span>
+                <span class="method-start">166692 ms</span>
               </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.homePageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">before</span>
+                <span class="method-start">169695 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">orderTest</span>
-                <span class="method-start">633826 ms</span>
+                <span class="method-name">loginVerifyTest</span>
+                <span class="method-start">191790 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">test.productTest</div> <!-- chronological-class-name -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">verifyPrdoduct</span>
-                <span class="method-start">633828 ms</span>
+                <span class="method-start">196682 ms</span>
               </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">before</span>
+                <span class="method-start">199702 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
+                <span class="method-name">loginTest</span>
+                <span class="method-start">230010 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">end</span>
+                <span class="method-start">230722 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.PaymentPageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">selectCreditCardAndEnter</span>
+                <span class="method-start">234048 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.PlaceOrderTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">orderTest</span>
+                <span class="method-start">264168 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.homePageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">before</span>
+                <span class="method-start">269710 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">enterProductName</span>
+                <span class="method-start">290392 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.productTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">addToCartTest</span>
-                <span class="method-start">633829 ms</span>
+                <span class="method-start">300483 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">test.PaymentPageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">cardNumberValidation</span>
+                <span class="method-start">330634 ms</span>
+              </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">end</span>
-                <span class="method-start">633830 ms</span>
+                <span class="method-start">360797 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">test.PlaceOrderTest</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">end</span>
-                <span class="method-start">633832 ms</span>
+                <span class="method-start">361545 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">test.homePageTest</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">end</span>
-                <span class="method-start">633833 ms</span>
+                <span class="method-start">361545 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">test.productTest</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">end</span>
-                <span class="method-start">633833 ms</span>
+                <span class="method-start">361546 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
     </div> <!-- wrapper -->
   </body>
-<script type="text/javascript" src="testng-reports2.js"></script>
 </html>

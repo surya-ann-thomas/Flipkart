@@ -1,6 +1,7 @@
 package test;
 
 import java.io.IOException;
+import java.util.Map;
 
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
@@ -9,8 +10,11 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
+import com.util.ExcelUtility;
+
 import pages.Login;
-import pages.OrderPlace;
+
+import pages.PaymentPage;
 import pages.homePage;
 import pages.productPage;
 import testBase.Base;
@@ -24,14 +28,18 @@ public class productTest extends Base{
 	Login login_;
 	homePage home;
 	productPage product;
-	OrderPlace order;
 	
-	@BeforeTest
+	PaymentPage payment;
+	
+	
+	@BeforeMethod
 	public void before() throws IOException, InterruptedException {
 		start();
 		login_=new Login();
 		Thread.sleep(4000);
-		home=login_.login(prop.getProperty("username"), prop.getProperty("password"));
+		Map<String,String> data=ExcelUtility.getMap();
+	     home=login_.login(data.get("username"), data.get("password"));
+		//home=login_.login(prop.getProperty("username"), prop.getProperty("password"));
 		product=home.productSearchAndClick("samsung mobile");
 	}
 	
@@ -47,12 +55,13 @@ public class productTest extends Base{
 
 @Test(priority=2)
 public void addToCartTest() throws IOException {
-	order=product.addToCart();
+	product.nextWindow();
+	payment=product.addToCart();
 }
 
 
 
-@AfterTest
+@AfterMethod
 public void end() {
 	driver.quit();
 }

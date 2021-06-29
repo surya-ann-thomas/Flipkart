@@ -28,7 +28,8 @@ public class PaymentPage extends Base{
 		
 	}
 	
-	public String paymentPageVerification() {
+	public String paymentPageVerification() throws InterruptedException {
+		Thread.sleep(3000);
 		return driver.getTitle();
 	}
 

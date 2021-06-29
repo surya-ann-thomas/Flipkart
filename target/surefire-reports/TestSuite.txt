@@ -1,70 +1,106 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 23, Failures: 1, Errors: 0, Skipped: 22, Time elapsed: 636.771 sec <<< FAILURE!
-before(test.PlaceOrderTest)  Time elapsed: 636.249 sec  <<< FAILURE!
-org.openqa.selenium.SessionNotCreatedException: session not created
-from timeout: Timed out receiving message from renderer: 600.000
-  (Session info: chrome=91.0.4472.124)
-Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+Tests run: 11, Failures: 6, Errors: 0, Skipped: 0, Time elapsed: 364.942 sec <<< FAILURE!
+verifyPaymentPageTitle(test.PaymentPageTest)  Time elapsed: 0.112 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'ADMIN-PC', ip: '192.168.42.87', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_201'
-Driver info: driver.version: ChromeDriver
-remote stacktrace: Backtrace:
-	Ordinal0 [0x00A72DB3+2502067]
-	Ordinal0 [0x00A0C5B1+2082225]
-	Ordinal0 [0x00912498+1057944]
-	Ordinal0 [0x00904D2F+1002799]
-	Ordinal0 [0x00903D69+998761]
-	Ordinal0 [0x00904026+999462]
-	Ordinal0 [0x00903915+997653]
-	Ordinal0 [0x008FF4F4+980212]
-	Ordinal0 [0x009038D1+997585]
-	Ordinal0 [0x00903670+996976]
-	Ordinal0 [0x00903409+996361]
-	Ordinal0 [0x009136A0+1062560]
-	Ordinal0 [0x0095AA59+1354329]
-	Ordinal0 [0x0095967A+1349242]
-	Ordinal0 [0x00955BEB+1334251]
-	Ordinal0 [0x00932174+1188212]
-	Ordinal0 [0x00933009+1191945]
-	GetHandleVerifier [0x00BEEC5C+1511084]
-	GetHandleVerifier [0x00C98522+2205554]
-	GetHandleVerifier [0x00AF3393+480739]
-	GetHandleVerifier [0x00AF2579+477129]
-	Ordinal0 [0x00A11E5D+2104925]
-	Ordinal0 [0x00A163F8+2122744]
-	Ordinal0 [0x00A16537+2123063]
-	Ordinal0 [0x00A1EE53+2158163]
-	BaseThreadInitThunk [0x7554337A+18]
-	RtlInitializeExceptionChain [0x77809882+99]
-	RtlInitializeExceptionChain [0x77809855+54]
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver.getTitle(RemoteWebDriver.java:281)
+	at pages.PaymentPage.paymentPageVerification(PaymentPage.java:32)
+	at test.PaymentPageTest.verifyPaymentPageTitle(PaymentPageTest.java:45)
 
+verifyProductInCart(test.PlaceOrderTest)  Time elapsed: 3.001 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ADMIN-PC', ip: '192.168.42.87', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_201'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver.getTitle(RemoteWebDriver.java:281)
+	at pages.OrderPlace.verifyCart(OrderPlace.java:27)
+	at test.PlaceOrderTest.verifyProductInCart(PlaceOrderTest.java:42)
+
+verifyPrdoduct(test.productTest)  Time elapsed: 3.02 sec  <<< FAILURE!
+java.lang.AssertionError: titles do not match expected [SAMSUNG Galaxy F12 ( 64 GB Storage, 4 GB RAM ) Online at Best Price On Flipkart.com] but found [Online Shopping Site for Mobiles, Electronics, Furniture, Grocery, Lifestyle, Books & More. Best Offers!]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:176)
+	at test.productTest.verifyPrdoduct(productTest.java:43)
+
+selectCreditCardAndEnter(test.PaymentPageTest)  Time elapsed: 30.121 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[text()='CONTINUE']"}
+  (Session info: chrome=91.0.4472.124)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ADMIN-PC', ip: '192.168.42.87', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.124, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Windows\TEMP\scoped_dir6...}, goog:chromeOptions: {debuggerAddress: localhost:59366}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 6a1dc2adcef52a3a3614032b837eb489
+*** Element info: {Using=xpath, value=//button[text()='CONTINUE']}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$new$0(W3CHandshakeResponse.java:57)
-	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$getResponseFunction$2(W3CHandshakeResponse.java:104)
-	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:123)
-	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
-	at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
-	at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)
-	at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:498)
-	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485)
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
-	at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)
-	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:219)
-	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:142)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
-	at testBase.Base.start(Base.java:29)
-	at test.PlaceOrderTest.before(PlaceOrderTest.java:30)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy9.click(Unknown Source)
+	at pages.PaymentPage.creditCardPage(PaymentPage.java:36)
+	at test.PaymentPageTest.selectCreditCardAndEnter(PaymentPageTest.java:51)
+
+addToCartTest(test.productTest)  Time elapsed: 30.15 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[@class='_2KpZ6l _2U9uOA _3v1-ww']"}
+  (Session info: chrome=91.0.4472.124)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ADMIN-PC', ip: '192.168.42.87', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.124, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Windows\TEMP\scoped_dir8...}, goog:chromeOptions: {debuggerAddress: localhost:53574}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 4cff83d8099dadf653dbe27bb226a8bf
+*** Element info: {Using=xpath, value=//button[@class='_2KpZ6l _2U9uOA _3v1-ww']}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy9.click(Unknown Source)
+	at pages.productPage.addToCart(productPage.java:52)
+	at test.productTest.addToCartTest(productTest.java:50)
+
+cardNumberValidation(test.PaymentPageTest)  Time elapsed: 30.161 sec  <<< FAILURE!
+java.lang.AssertionError: card number is valid expected [Not a valid card number] but found []
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:176)
+	at test.PaymentPageTest.cardNumberValidation(PaymentPageTest.java:57)
 

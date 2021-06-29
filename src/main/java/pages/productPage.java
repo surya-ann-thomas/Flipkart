@@ -4,7 +4,6 @@ import java.io.IOException;
 import java.util.Iterator;
 import java.util.Set;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.WebElement;
@@ -13,9 +12,9 @@ import testBase.Base;
 public class productPage extends Base{
 
 	
-	//@FindBy(xpath="//button[text()='ADD TO CART']")
-	@FindBy(xpath="//button[@class='_2KpZ6l _2U9uOA _3v1-ww']")
-	WebElement cart;
+	
+	@FindBy(xpath="//button[@type='button']")
+	WebElement buybutton;
 	
 	 public productPage() throws IOException {
 			PageFactory.initElements(driver, this);
@@ -48,9 +47,9 @@ public String productVerify() {
 	
 }
 
-public OrderPlace addToCart() throws IOException {
-	cart.click();
-	return new OrderPlace();
+public PaymentPage addToCart() throws IOException {
+	buybutton.click();
+	return new PaymentPage();
 }
 
 }

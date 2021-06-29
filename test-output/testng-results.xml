@@ -1,37 +1,115 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" total="8" passed="8">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="28811" started-at="2021-06-29T07:30:45Z" finished-at="2021-06-29T07:31:14Z">
+  <suite name="Suite" duration-ms="147577" started-at="2021-06-29T14:04:25Z" finished-at="2021-06-29T14:06:53Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="28811" started-at="2021-06-29T07:30:45Z" finished-at="2021-06-29T07:31:14Z">
-      <class name="test.LoginTest">
-        <test-method status="PASS" signature="before()[pri:0, instance:test.LoginTest@11dc3715]" name="before" is-config="true" duration-ms="12252" started-at="2021-06-29T13:00:45Z" finished-at="2021-06-29T13:00:58Z">
+    <test name="Test" duration-ms="147577" started-at="2021-06-29T14:04:25Z" finished-at="2021-06-29T14:06:53Z">
+      <class name="test.homePageTest">
+        <test-method status="PASS" signature="before()[pri:0, instance:test.homePageTest@130d63be]" name="before" is-config="true" duration-ms="12252" started-at="2021-06-29T19:34:25Z" finished-at="2021-06-29T19:34:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="PASS" signature="titleTest()[pri:0, instance:test.LoginTest@11dc3715]" name="titleTest" duration-ms="30" started-at="2021-06-29T13:00:58Z" finished-at="2021-06-29T13:00:58Z">
+        <test-method status="PASS" signature="loginVerifyTest()[pri:0, instance:test.homePageTest@130d63be]" name="loginVerifyTest" duration-ms="2132" started-at="2021-06-29T19:34:37Z" finished-at="2021-06-29T19:34:40Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- titleTest -->
-        <test-method status="PASS" signature="end()[pri:0, instance:test.LoginTest@11dc3715]" name="end" is-config="true" duration-ms="1389" started-at="2021-06-29T13:00:58Z" finished-at="2021-06-29T13:00:59Z">
+        </test-method> <!-- loginVerifyTest -->
+        <test-method status="PASS" signature="end()[pri:0, instance:test.homePageTest@130d63be]" name="end" is-config="true" duration-ms="635" started-at="2021-06-29T19:34:40Z" finished-at="2021-06-29T19:34:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- end -->
-        <test-method status="PASS" signature="before()[pri:0, instance:test.LoginTest@11dc3715]" name="before" is-config="true" duration-ms="12161" started-at="2021-06-29T13:00:59Z" finished-at="2021-06-29T13:01:11Z">
+        <test-method status="PASS" signature="before()[pri:0, instance:test.homePageTest@130d63be]" name="before" is-config="true" duration-ms="11066" started-at="2021-06-29T19:35:32Z" finished-at="2021-06-29T19:35:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="PASS" signature="loginTest()[pri:0, instance:test.LoginTest@11dc3715]" name="loginTest" duration-ms="1930" started-at="2021-06-29T13:01:11Z" finished-at="2021-06-29T13:01:13Z">
+        <test-method status="PASS" signature="enterProductName()[pri:0, instance:test.homePageTest@130d63be]" name="enterProductName" duration-ms="4317" started-at="2021-06-29T19:35:43Z" finished-at="2021-06-29T19:35:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterProductName -->
+        <test-method status="PASS" signature="end()[pri:0, instance:test.homePageTest@130d63be]" name="end" is-config="true" duration-ms="603" started-at="2021-06-29T19:35:48Z" finished-at="2021-06-29T19:35:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- end -->
+      </class> <!-- test.homePageTest -->
+      <class name="test.LoginTest">
+        <test-method status="PASS" signature="before()[pri:0, instance:test.LoginTest@42a48628]" name="before" is-config="true" duration-ms="10421" started-at="2021-06-29T19:34:41Z" finished-at="2021-06-29T19:34:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="titleTest()[pri:0, instance:test.LoginTest@42a48628]" name="titleTest" duration-ms="18" started-at="2021-06-29T19:34:51Z" finished-at="2021-06-29T19:34:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- titleTest -->
+        <test-method status="PASS" signature="end()[pri:0, instance:test.LoginTest@42a48628]" name="end" is-config="true" duration-ms="620" started-at="2021-06-29T19:34:51Z" finished-at="2021-06-29T19:34:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- end -->
+        <test-method status="PASS" signature="before()[pri:0, instance:test.LoginTest@42a48628]" name="before" is-config="true" duration-ms="9792" started-at="2021-06-29T19:35:48Z" finished-at="2021-06-29T19:35:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="loginTest()[pri:0, instance:test.LoginTest@42a48628]" name="loginTest" duration-ms="434" started-at="2021-06-29T19:35:58Z" finished-at="2021-06-29T19:35:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method status="PASS" signature="end()[pri:0, instance:test.LoginTest@11dc3715]" name="end" is-config="true" duration-ms="1022" started-at="2021-06-29T13:01:13Z" finished-at="2021-06-29T13:01:14Z">
+        <test-method status="PASS" signature="end()[pri:0, instance:test.LoginTest@42a48628]" name="end" is-config="true" duration-ms="946" started-at="2021-06-29T19:35:59Z" finished-at="2021-06-29T19:36:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- end -->
       </class> <!-- test.LoginTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="test.productTest">
+        <test-method status="PASS" signature="before()[pri:0, instance:test.productTest@6aeb35e6]" name="before" is-config="true" duration-ms="15122" started-at="2021-06-29T19:34:52Z" finished-at="2021-06-29T19:35:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="verifyPrdoduct()[pri:0, instance:test.productTest@6aeb35e6]" name="verifyPrdoduct" duration-ms="3450" started-at="2021-06-29T19:35:07Z" finished-at="2021-06-29T19:35:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPrdoduct -->
+        <test-method status="PASS" signature="end()[pri:0, instance:test.productTest@6aeb35e6]" name="end" is-config="true" duration-ms="615" started-at="2021-06-29T19:35:11Z" finished-at="2021-06-29T19:35:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- end -->
+        <test-method status="PASS" signature="before()[pri:0, instance:test.productTest@6aeb35e6]" name="before" is-config="true" duration-ms="20893" started-at="2021-06-29T19:36:00Z" finished-at="2021-06-29T19:36:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="addToCartTest()[pri:0, instance:test.productTest@6aeb35e6]" name="addToCartTest" duration-ms="1959" started-at="2021-06-29T19:36:21Z" finished-at="2021-06-29T19:36:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addToCartTest -->
+        <test-method status="PASS" signature="end()[pri:0, instance:test.productTest@6aeb35e6]" name="end" is-config="true" duration-ms="721" started-at="2021-06-29T19:36:23Z" finished-at="2021-06-29T19:36:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- end -->
+      </class> <!-- test.productTest -->
+      <class name="test.PaymentPageTest">
+        <test-method status="PASS" signature="before()[pri:0, instance:test.PaymentPageTest@1b7cc17c]" name="before" is-config="true" duration-ms="16678" started-at="2021-06-29T19:35:11Z" finished-at="2021-06-29T19:35:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="verifyPaymentPageTitle()[pri:0, instance:test.PaymentPageTest@1b7cc17c]" name="verifyPaymentPageTitle" duration-ms="3017" started-at="2021-06-29T19:35:28Z" finished-at="2021-06-29T19:35:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPaymentPageTitle -->
+        <test-method status="PASS" signature="end()[pri:0, instance:test.PaymentPageTest@1b7cc17c]" name="end" is-config="true" duration-ms="640" started-at="2021-06-29T19:35:31Z" finished-at="2021-06-29T19:35:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- end -->
+        <test-method status="PASS" signature="before()[pri:0, instance:test.PaymentPageTest@1b7cc17c]" name="before" is-config="true" duration-ms="19856" started-at="2021-06-29T19:36:24Z" finished-at="2021-06-29T19:36:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="selectCreditCardAndEnter()[pri:0, instance:test.PaymentPageTest@1b7cc17c]" name="selectCreditCardAndEnter" duration-ms="8482" started-at="2021-06-29T19:36:43Z" finished-at="2021-06-29T19:36:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectCreditCardAndEnter -->
+        <test-method status="PASS" signature="end()[pri:0, instance:test.PaymentPageTest@1b7cc17c]" name="end" is-config="true" duration-ms="648" started-at="2021-06-29T19:36:52Z" finished-at="2021-06-29T19:36:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- end -->
+      </class> <!-- test.PaymentPageTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

@@ -1,52 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="methods">
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" parallel="tests">
   <listeners>
     <listener class-name="testBase.ExtentReportListener"/>
   </listeners>
-  <test thread-count="5" name="Test(failed)" parallel="methods">
+  <test name="Test(failed)" parallel="tests">
     <classes>
-      <class name="test.productTest">
-        <methods>
-          <include name="end"/>
-          <include name="addToCartTest"/>
-          <include name="verifyPrdoduct"/>
-          <include name="before"/>
-        </methods>
-      </class> <!-- test.productTest -->
-      <class name="test.PlaceOrderTest">
-        <methods>
-          <include name="before"/>
-          <include name="verifyProductInCart"/>
-          <include name="orderTest"/>
-          <include name="end"/>
-        </methods>
-      </class> <!-- test.PlaceOrderTest -->
-      <class name="test.LoginTest">
+      <class name="test.PaymentPageTest">
         <methods>
           <include name="end"/>
           <include name="before"/>
-          <include name="loginTest"/>
-          <include name="titleTest"/>
         </methods>
-      </class> <!-- test.LoginTest -->
+      </class> <!-- test.PaymentPageTest -->
       <class name="test.homePageTest">
         <methods>
           <include name="before"/>
           <include name="end"/>
-          <include name="loginVerifyTest"/>
-          <include name="enterProductName"/>
         </methods>
       </class> <!-- test.homePageTest -->
-      <class name="test.PaymentPageTest">
+      <class name="test.LoginTest">
         <methods>
-          <include name="verifyPaymentPageTitle"/>
-          <include name="cardNumberValidation"/>
           <include name="before"/>
-          <include name="selectCreditCardAndEnter"/>
           <include name="end"/>
         </methods>
-      </class> <!-- test.PaymentPageTest -->
+      </class> <!-- test.LoginTest -->
+      <class name="test.productTest">
+        <methods>
+          <include name="addToCartTest"/>
+          <include name="end"/>
+          <include name="before"/>
+        </methods>
+      </class> <!-- test.productTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
