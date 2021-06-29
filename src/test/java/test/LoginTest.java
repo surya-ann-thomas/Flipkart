@@ -9,7 +9,9 @@ import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import org.testng.log4testng.Logger;
@@ -31,7 +33,7 @@ public class LoginTest extends Base{
 		// TODO Auto-generated constructor stub
 	}
 	
-	@BeforeTest
+	@BeforeMethod
 public void before() throws InterruptedException, IOException {
 		start();
 		log.info("Logging into flipkart");
@@ -58,7 +60,7 @@ public void before() throws InterruptedException, IOException {
 		Assert.assertEquals(title, "Online Shopping Site for Mobiles, Electronics, Furniture, Grocery, Lifestyle, Books & More. Best Offers!","login page not visible");
 	}
 	
-	@AfterTest
+	@AfterMethod
 	public void end() {
 	driver.quit();	
 	}

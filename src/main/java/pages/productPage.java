@@ -13,7 +13,8 @@ import testBase.Base;
 public class productPage extends Base{
 
 	
-	@FindBy(xpath="//button[text()='ADD TO CART']")
+	//@FindBy(xpath="//button[text()='ADD TO CART']")
+	@FindBy(xpath="//button[@class='_2KpZ6l _2U9uOA _3v1-ww']")
 	WebElement cart;
 	
 	 public productPage() throws IOException {

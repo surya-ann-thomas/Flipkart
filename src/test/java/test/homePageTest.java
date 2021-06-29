@@ -1,11 +1,15 @@
 package test;
 
 import java.io.IOException;
+import java.util.Map;
 
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
+
+import com.util.ExcelUtility;
 
 import pages.Login;
 import pages.OrderPlace;
@@ -25,13 +29,16 @@ public class homePageTest extends Base{
 	homePage home;
 	productPage product;
 	OrderPlace order;
-	@BeforeTest
+	@BeforeMethod
 	public void before() throws IOException, InterruptedException {
 		start();
 		login_=new Login();
 		
 		Thread.sleep(4000);
-		home=login_.login(prop.getProperty("username"), prop.getProperty("password"));
+		Map<String,String> data=ExcelUtility.getMap();
+
+	     home=login_.login(data.get("username"), data.get("password"));
+		//home=login_.login(prop.getProperty("username"), prop.getProperty("password"));
 	}
 @Test(priority=1)
 	public void loginVerifyTest() {
